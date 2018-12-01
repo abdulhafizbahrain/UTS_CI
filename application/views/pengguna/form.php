@@ -49,6 +49,8 @@
                             <input type="hidden" class="form-control"  required id="photos" name="photos"value="<?php echo $photo; ?>" />
                             <input type="file" id="photo" name="photo" size="20" value="<?php echo $photo; ?>" />
                         </td>
+                        <td  class="pull-left"></td>
+
                     </tr>
 
                     <input type="hidden" name="id_pengguna" value="<?php echo $id_pengguna; ?>" />
@@ -57,6 +59,10 @@
                             <button type="submit" class="btn btn-primary btn-sm"><i class='fa fa-check'></i> <?php echo $button ?></button>
                             <a href="<?php echo site_url('pengguna') ?>" class="btn btn-sm btn-default"><i class='fa fa-remove'></i> Kembali</a>
                         </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan ="2" style="text-align: center;"><img src="<?php echo base_url().'assets/img/'.$photo ?>" width="100px" height="100px" ></td>
                     </tr>
                 </table>
            </form>
