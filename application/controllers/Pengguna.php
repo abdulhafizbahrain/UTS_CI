@@ -166,5 +166,17 @@ class Pengguna extends CI_Controller {
         // $this->form_validation->set_rules('level', 'Level', 'trim|required');
         // $this->form_validation->set_rules('photo', 'Photo', 'trim|required');
         // $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
-        }
+    }
+
+  public function cetak()
+  {
+    $pengguna = $this->Pengguna_model->get_all();
+
+    $data = array(
+        'judul' => "Pengguna Barang Inventaris",
+        'page' =>  "pengguna/index",
+        'pengguna_data' => $pengguna
+    );
+    $this->load->view('cetak',$data);
+  }
 }

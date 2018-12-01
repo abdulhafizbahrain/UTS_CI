@@ -1,4 +1,4 @@
-<section class="content-header">
+<section class="content-header" onload="window.print();">
       <h1>
         Pengguna
         <small>Barang Inventaris</small>
@@ -21,7 +21,9 @@
             <div class="box-body">
             	<div style="padding-bottom: 15px;">
             	<a href='<?=site_url('pengguna/create')?>' class='btn btn-primary btn-sm'><i class='fa fa-plus'></i> Tambah Data</a>
+            	<a href='<?=site_url('pengguna/cetak')?>' class='btn btn-danger btn-sm'><i class='fa fa-print'></i> Print</a>
             	</div>
+                
             <div class='table-responsive'> 
                 <table class="table table-striped table-hover" id="dataTable">
                     <thead>
