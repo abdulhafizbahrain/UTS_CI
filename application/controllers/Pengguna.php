@@ -169,14 +169,37 @@ class Pengguna extends CI_Controller {
     }
 
   public function cetak()
-  {
-    $pengguna = $this->Pengguna_model->get_all();
+    {
+        $pengguna = $this->Pengguna_model->get_all();
 
-    $data = array(
-        'judul' => "Pengguna Barang Inventaris",
-        'page' =>  "pengguna/index",
-        'pengguna_data' => $pengguna
-    );
-    $this->load->view('cetak',$data);
-  }
+        $data = array(
+            'judul' => "Pengguna",
+            'page' =>  "pengguna/index",
+            'pengguna_data' => $pengguna
+        );
+        $this->load->view('cetak',$data);
+    }
+    public function cetakexel()
+    {
+        $pengguna = $this->Pengguna_model->get_all();
+
+        $data = array(
+            'judul' => "Pengguna",
+            'judul' => "Pengguna Barang Inventaris",
+            'page' =>  "pengguna/index",
+            'pengguna_data' => $pengguna
+        );
+        $this->load->view('cetakexel',$data);
+    }
+    public function cetakword()
+    {
+        $pengguna = $this->Pengguna_model->get_all();
+
+        $data = array(
+            'judul' => "Pengguna",
+            'page' =>  "pengguna/index",
+            'pengguna_data' => $pengguna
+        );
+        $this->load->view('cetakword',$data);
+    }
 }

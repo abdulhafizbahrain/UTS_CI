@@ -46,6 +46,7 @@
                     <tr>
                         <td>Photo <?php echo form_error('photo') ?></td>
                         <td>
+                        <img src="<?php echo base_url().'assets/img/'.$photo ?>" width="100px" height="100px" >
                             <input type="hidden" class="form-control"  required id="photos" name="photos"value="<?php echo $photo; ?>" />
                             <input type="file" id="photo" name="photo" size="20" value="<?php echo $photo; ?>" />
                         </td>
@@ -62,7 +63,7 @@
                         
                     </tr>
                     <tr>
-                        <td colspan ="2" style="text-align: center;"><img src="<?php echo base_url().'assets/img/'.$photo ?>" width="100px" height="100px" ></td>
+                        
                     </tr>
                 </table>
            </form>

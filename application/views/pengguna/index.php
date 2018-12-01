@@ -20,8 +20,10 @@
             <!-- /.box-header -->
             <div class="box-body">
             	<div style="padding-bottom: 15px;">
-            	<a href='<?=site_url('pengguna/create')?>' class='btn btn-primary btn-sm'><i class='fa fa-plus'></i> Tambah Data</a>
-            	<a href='<?=site_url('pengguna/cetak')?>' class='btn btn-danger btn-sm'><i class='fa fa-print'></i> Print</a>
+            	<a href='<?=site_url('pengguna/create')?>' class='btn btn-secondary btn-sm'><i class='fa fa-plus'></i> Tambah Data</a>
+            	<a href='<?=site_url('pengguna/cetak')?>' class='btn btn-danger btn-sm'><i class='fa fa-print'></i> Print PDF</a>
+            	<a href='<?=site_url('pengguna/cetakexel')?>' class='btn btn-info btn-sm'><i class='fa fa-print'></i> Print Exel</a>
+            	<a href='<?=site_url('pengguna/cetakword')?>' class='btn btn-primary btn-sm'><i class='fa fa-print'></i> Print Word</a>
             	</div>
                 
             <div class='table-responsive'> 
