@@ -38,6 +38,7 @@
                             <th>Password</th>
                             <th>Level</th>
                             <th>Photo</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
 					<tbody>
