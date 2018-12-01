@@ -1,16 +1,8 @@
 <?php
-$title= "Pengguna.docx";
-header('Content-Description: File Transfer');
-header('Content-Type: application/octet-stream');
-header('Content-Disposition: attachment; filename='.$title);
-header('Content-Transfer-Encoding: binary');
-header('Expires: 0');
-header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
-header('Pragma: public');
-header('Content-Length: ' . filesize($filename));
-flush();
-readfile($filename);
-unlink($filename);
+header("Content-type: application/msword");
+header("Content-disposition: inline; filename=Pengguna.doc");
+header("Content-length: ".strlen($document));
+echo $document;
 
 ?>
 
@@ -60,7 +52,7 @@ unlink($filename);
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body onload="window.print();">
+<body>
 <div class="wrapper">
   <!-- Main content -->
     <section class="content">
